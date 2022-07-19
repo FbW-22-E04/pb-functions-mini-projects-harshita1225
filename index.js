@@ -18,10 +18,10 @@ console.log(calculateDogAge(7, 5)); //here conversion is 5 years --> 35
 // The Lifetime Supply Calculator
 
 function calculateSupply(currentAge, amountPerDay) {
-  let maxAge = 110;
+  let maxAge = 100;
   let years = maxAge - currentAge;
-  return `You will need ${Math.ceil(
-    years * amountPerDay
+  return `You will need ${Math.round(
+    years * 365.25 * amountPerDay
   )} peices to last you until the ripe old age of ${maxAge} with amount per day as ${amountPerDay}, with years in hand as ${years} as the currentage is ${currentAge}!!!`;
 }
 
